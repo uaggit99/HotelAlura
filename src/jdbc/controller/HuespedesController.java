@@ -35,9 +35,8 @@ public class HuespedesController {
 		this.huespedesDao.Eliminar(id);
 	}
 
-	public void Actualizar(String nombre, String apellido, Date fechaNacido, String nacionalidad, String telefono,
-			int reserva_id, Integer id) {
-		this.huespedesDao.Actualizar(nombre, apellido, fechaNacido, nacionalidad, telefono,reserva_id, id);
+	public void Actualizar(String nombre, String apellido, Date fechaNacido, String nacionalidad, String telefono,Integer id) {
+		this.huespedesDao.Actualizar(nombre, apellido, fechaNacido, nacionalidad, telefono, id);
 
 	}
 }

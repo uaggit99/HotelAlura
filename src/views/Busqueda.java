@@ -49,6 +49,7 @@ public class Busqueda extends JFrame {
 	private HuespedesController huespedesController;
 	private static Integer idR;
 	private static Integer idH;
+	private static int id_Rer;
 	public static JDateChooser fecha1;
 	public static JDateChooser fecha2;
 
@@ -239,8 +240,8 @@ public class Busqueda extends JFrame {
 					LlenarTablaHuespedes();
 					LlenarTablaReservas();
 				} else {
-					// LlenarTablaReservasId();
-					// LlenarTablaHuespedesId();
+					LlenarTablaReservasId();
+					LlenarTablaHuespedesId();
 				}
 
 			}
@@ -296,6 +297,9 @@ public class Busqueda extends JFrame {
 				} else if (filaHuespedes >= 0) {
 					String valoridH = tbHuespedes.getValueAt(filaHuespedes, 0).toString();
 					idH = Integer.valueOf(valoridH);
+					String valoridRer = tbHuespedes.getValueAt(filaHuespedes, 6).toString();
+					id_Rer = Integer.parseInt(valoridRer);
+					
 					ActualizarHuesped();
 					limpiarTabla();
 					LlenarTablaHuespedes();
@@ -484,11 +488,9 @@ public class Busqueda extends JFrame {
 					Date fechaN = Date.valueOf(modeloHuesped.getValueAt(tbHuespedes.getSelectedRow(), 3).toString());
 					String nacionalidad = (String) modeloHuesped.getValueAt(tbHuespedes.getSelectedRow(), 4);
 					String telefono = (String) modeloHuesped.getValueAt(tbHuespedes.getSelectedRow(), 5);
-					int idReserva = Integer
-							.parseInt(modeloHuesped.getValueAt(tbHuespedes.getSelectedRow(), 6).toString());
+					int idReserva = id_Rer;//Integer	.parseInt(modeloHuesped.getValueAt(tbHuespedes.getSelectedRow(), 6).toString());
 					Integer id = Integer.valueOf(modeloHuesped.getValueAt(tbHuespedes.getSelectedRow(), 0).toString());
-					this.huespedesController.Actualizar(nombre, apellido, fechaN, nacionalidad, telefono, idReserva,
-							idH);
+					this.huespedesController.Actualizar(nombre, apellido, fechaN, nacionalidad, telefono,idH);
 					JOptionPane.showMessageDialog(this, String.format("Registro modificado con éxito"));
 				}, () -> JOptionPane.showMessageDialog(this, "Por favor, elije un registro"));
 

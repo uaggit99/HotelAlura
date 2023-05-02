@@ -23,7 +23,7 @@ public class HuespedesDao {
 			PreparedStatement statement;
 			statement = con.prepareStatement(
 					"INSERT INTO Huespedes (Nombre,Apellido,FechaNacimiento,Nacionalidad,Telefono,Id_Reserva)"
-							+ " VALUES (?, ?, ?, ?,?,?)",
+							+ " VALUES (?,?,?,?,?,?)",
 					Statement.RETURN_GENERATED_KEYS);
 
 			try (statement) {
@@ -109,16 +109,16 @@ public class HuespedesDao {
 	}
 
 	public void Actualizar(String nombre, String apellido, Date fechaNacido, String nacionalidad, String telefono,
-			int reserva_id, Integer id) {
+			 Integer id) {
 		try (PreparedStatement stm = con.prepareStatement(
-				"UPDATE huespedes SET Nombre = ?, Apellido = ?, FechaNacimiento = ?, Nacionalidad = ?, Telefono = ?, Id_Reserva = ? WHERE Id = ?")) {
+				"UPDATE huespedes SET Nombre = ?, Apellido = ?, FechaNacimiento = ?, Nacionalidad = ?, Telefono = ? WHERE Id = ?")) {
 			stm.setString(1, nombre);
 			stm.setString(2, apellido);
 			stm.setDate(3, (java.sql.Date) fechaNacido);
 			stm.setString(4, nacionalidad);
 			stm.setString(5, telefono);
-			stm.setInt(6, reserva_id);
-			stm.setInt(7, id);
+			//stm.setInt(6, reserva_id);
+			stm.setInt(6, id);
 			stm.execute();
 		} catch (SQLException e) {
 			throw new RuntimeException(e);

@@ -16,7 +16,7 @@ public class Huespedes {
 	}
 
 	public Huespedes(Integer id, String nombre, String apellido, Date fechaNacido, String nacionalidad, String telefono,
-			Integer reserva_id) {
+			int reserva_id) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -37,14 +37,14 @@ public class Huespedes {
 		this.reserva_id = reserva_id;
 	}
 	public Huespedes( String nombre, String apellido, Date fechaNacido, String nacionalidad, String telefono,
-		int reserva_id, Integer id) {
+		Integer id) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.fechaNacido = fechaNacido;
 		this.nacionalidad = nacionalidad;
 		this.telefono = telefono;
-		this.reserva_id = reserva_id;
+		//this.reserva_id = reserva_id;
 	}
 	
 	
