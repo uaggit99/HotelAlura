@@ -99,6 +99,15 @@
 ## el programa no permite modificar el id  y al cambiar las fecha se calcula el nuevo valor apagar
 ## el boton de EDITAR permite modificar los datos del huesped a excepcion el numero de la reserva y el id
 
+### Base de datos MySQL
+
+</br>
+<p align="center" >
+     <img width="500" heigth="500" src="https://github.com/uaggit99/HotelAlura/blob/main/src/imagenes/basedatosSQL.png">
+</p>
+</br>
+
+
 
 
 
