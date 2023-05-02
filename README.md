@@ -12,6 +12,13 @@
 #### 🔹 src/views: carpeta con toda la interfaz gráfica de las pantallas necesarias para desarrollar el programa;
 #### 🔹 src/imagenes: carpeta con imágenes que puedes usar en tu proyecto. Siéntete libre de usar otros, si lo deseas;
 ####  los paquentes  de jdbc.factory, jdbc.model,jdbc.dao, jdbc.controller siguendo el modelo MVC
+<</br></br>
+
+### Regitro de usuario
+
+</br></br>
+
+
 
 <p align="center" >
      <img width="500" heigth="500" src="https://github.com/uaggit99/HotelAlura/blob/main/src/imagenes/registroUsuario.png">
