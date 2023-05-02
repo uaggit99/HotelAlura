@@ -103,7 +103,7 @@
 
 </br>
 <p align="center" >
-     <img width="500" heigth="500" src="https://github.com/uaggit99/HotelAlura/blob/main/src/imagenes/basedatosSQL.png">
+     <img width="400" heigth="400" src="https://github.com/uaggit99/HotelAlura/blob/main/src/imagenes/basedatosSQL.png">
 </p>
 </br>
 
