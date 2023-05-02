@@ -14,6 +14,6 @@
 ####  los paquentes  de jdbc.factory, jdbc.model,jdbc.dao, jdbc.controller siguendo el modelo MVC
 
 <p align="center" >
-     <img width="600" heigth="600" src="https://drive.google.com/file/d/1G7YW3m5SsZ6AzY-X9kqXlXjxhTwPlEdI/view?usp=share_link">
+     <img width="600" heigth="600" src="https://github.com/uaggit99/HotelAlura/blob/main/src/imagenes/registro.png">
 </p>
 
