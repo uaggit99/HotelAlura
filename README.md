@@ -30,7 +30,7 @@
 </p>
 </br>
 
-### Inicio de sesion  cuando el usuario esta registrado envia un mensaje
+###  Inicio de sesion  cuando el usuario esta registrado envia un mensaje
 
 </br>
 <p align="center" >
@@ -57,7 +57,7 @@
 </p>
 
 </br>
-## El programa calcula el valor a pagar y evita que la fecha llegada sea anterior  a la fecha de salida
+### El programa calcula el valor a pagar y evita que la fecha llegada sea anterior  a la fecha de salida
 </br>
 <p align="center" >
      <img width="500" heigth="500" src="https://github.com/uaggit99/HotelAlura/blob/main/src/imagenes/registro6.png">
